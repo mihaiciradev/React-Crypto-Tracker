@@ -18,7 +18,7 @@ The application's purpose is to serve as a tracker for users, helping an individ
 The users are able to browse through a long list of coins, save them and further investigate them. The data chosen by the user is persistent using the browser's local memory called localStorage. This makes the data being persistent over sessions.
 
 ## Installation
-After downloading the repository, install the dependencies using **npm install**.
+After downloading the repository, install the dependencies using **npm install --force** The force option has to be used, because of one of the dependencies - the one that brings the crypto coin icons.
 
 ## Usage
 To start the development server, run the following command: **npm start**. By default, the server will run at http://localhost:3000.
