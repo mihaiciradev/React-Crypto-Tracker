@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+#logo #eye-bot{
+  transform-origin: top;
+  transform-box: fill-box;
+  animation: 8s bottom_eye linear infinite ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logo #eye-top{
+  transform-origin: bottom;
+  transform-box: fill-box;
+  animation: 8s top_eye linear infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#logo #eyeball{
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: 8s eyeball linear infinite;
+}
+
+@keyframes eyeball {
+  0%,20%,100%{
+    transform: rotateX(0deg);
+  }
+  9%,10%{
+    transform: rotateX(85deg);;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes bottom_eye {
+  0%,20%,100%{
+    transform: rotateX(0deg);
   }
-  to {
-    transform: rotate(360deg);
+    9%,10%{
+    transform: rotateX(70deg);
+  }
+}
+
+
+@keyframes top_eye {
+  0%,20%,100%{
+    transform: rotateX(0deg);
+  }
+    9%,10%{
+    transform: rotateX(-70deg);
   }
 }

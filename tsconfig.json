@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types":["react-crypto-icons", "react", "node", "react-redux"],
     "target": "es5",
     "lib": [
       "dom",
